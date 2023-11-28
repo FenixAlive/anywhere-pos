@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 export default function Login({
   searchParams,
 }: {
-  searchParams: { message: string }
+  searchParams?: { message: string }
 }) {
   const signIn = async (formData: FormData) => {
     'use server'
